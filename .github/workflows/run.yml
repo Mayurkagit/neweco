@@ -36,5 +36,8 @@ jobs:
         END_LINK: ${{ secrets.END_LINK }}
         BUNNY_LIBRARY_ID: ${{ secrets.BUNNY_LIBRARY_ID }}
         BUNNY_STREAM_KEY: ${{ secrets.BUNNY_STREAM_KEY }}
+        # SOCKS5 Proxy Routing Layer Mappings
+        PROXY_IP: ${{ secrets.PROXY_IP }}
+        PROXY_PORT: ${{ secrets.PROXY_PORT }}
       run: |
         python download.py
